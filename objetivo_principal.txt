@@ -1,0 +1,11 @@
+Sistema para Fichas;
+
+Foco principal é para ter facilitação em RPGs de mesa para melhor controle como mestre do RPG.
+
+Sistema de logins dos jogadores.
+Criação de fichas dos jogadores.
+Ter controle de acesso sendo mestre ou jogador.
+Criação de sala para mestres.
+Viabilidade para rolamentos de dados ao vivo.
+
+Demais objetivos sendo gerados conforme a criação.
