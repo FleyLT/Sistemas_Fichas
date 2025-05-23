@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['usuario_email'] = $user['email'];
             $_SESSION['usuario_papel'] = $user['papel']; // Aqui estamos armazenando o papel do usuário
 
-            // Redirecionando para a página principal após login
+            // Redirecionando para o dashboard após o login
             header("Location: dashboard.php");
             exit();
         } else {
