@@ -49,36 +49,126 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criar Ficha - Sistema Ficha</title>
     <style>
-        body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
-        .form-container { background: white; padding: 20px; border-radius: 10px; width: 400px; margin: auto; }
-        input, select { width: 100%; padding: 8px; margin-bottom: 12px; box-sizing: border-box; }
-        label { font-weight: bold; }
-        input[type="submit"] { background-color: #4CAF50; color: white; border: none; cursor: pointer; }
-        input[type="submit"]:hover { background-color: #45a049; }
-        
-        /* Estilo do botão de voltar */
-        .back-btn {
-            background-color: #007BFF; /* Azul bonito */
-            color: white;
-            padding: 12px 20px;
-            text-align: center;
-            border-radius: 5px;
-            display: inline-block;  /* Modificado para não ocupar toda a largura */
-            font-size: 16px;
-            text-decoration: none;
-            width: auto; /* Ajustado para tamanho automático */
-            margin-top: 20px;
-            transition: background-color 0.3s ease;
+        <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f1f3f5;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #212529;
+        margin-bottom: 24px;
+    }
+
+    .form-container {
+        background-color: white;
+        padding: 30px;
+        border-radius: 16px;
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        transition: transform 0.3s;
+    }
+
+    .form-container:hover {
+        transform: scale(1.01);
+    }
+
+    label {
+        font-weight: 600;
+        color: #495057;
+        display: block;
+        margin-bottom: 6px;
+    }
+
+    input[type="text"], select {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ced4da;
+        border-radius: 10px;
+        background-color: #f8f9fa;
+        color: #495057;
+        margin-bottom: 16px;
+        transition: border-color 0.3s, background-color 0.3s;
+    }
+
+    input[type="text"]:focus, select:focus {
+        border-color: #0d6efd;
+        background-color: #fff;
+        outline: none;
+    }
+
+    input[type="submit"] {
+        background-color: #198754;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: 600;
+        width: 100%;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #157347;
+        transform: scale(1.03);
+    }
+
+    .btn-voltar {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #0d6efd;
+        color: white;
+        padding: 14px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        font-weight: bold;
+        transition: background-color 0.3s, transform 0.3s;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .btn-voltar:hover {
+        background-color: #0a58ca;
+        transform: scale(1.07);
+    }
+
+    p {
+        text-align: center;
+        color: #212529;
+        background-color: #d1e7dd;
+        padding: 10px;
+        border-radius: 8px;
+        margin-top: 20px;
+    }
+
+    p.error {
+        background-color: #f8d7da;
+    }
+
+    @media (max-width: 600px) {
+        .form-container {
+            padding: 20px;
         }
 
-        .back-btn:hover {
-            background-color: #0056b3;
+        .btn-voltar {
+            padding: 10px 16px;
         }
+    }
+</style>
 
-        /* Ajuste no campo de texto */
-        input[type="text"] {
-            width: calc(100% - 16px); /* Ajuste da largura do campo */
-        }
     </style>
 </head>
 <body>
@@ -100,10 +190,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         <input type="submit" value="Criar Ficha">
     </form>
-
-    <!-- Botão de Voltar ao Painel -->
-    <a href="painel_jogador.php" class="back-btn">Voltar ao Painel</a>
+         
 </div>
-
+                <a href="painel_jogador.php" class="btn-voltar">🏠 Voltar ao Painel</a>
 </body>
 </html>

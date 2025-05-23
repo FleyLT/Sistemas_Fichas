@@ -97,3 +97,22 @@ body {
 .logout-button:hover {
     background-color: #e53935;
 }
+
+.btn-voltar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007bff;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn-voltar:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
