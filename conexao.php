@@ -7,8 +7,8 @@ $pass = "";
 
 $conn = new mysqli($host, $user, $pass, $db);
 
-if ($conne->connect_error) {
-    die("Conexão falhou: " . $conne->connect_error);
+if ($conn->connect_error) {
+    die("Conexão falhou: " . $conn->connect_error);
 }
 
 ?>
