@@ -10,11 +10,11 @@
 <body>
     <form action="" method="post">
         <div class="login-box">
-            <h2>SEJA BEM-VINDO</h2>
+            <h2>SEJA BEM-VINDO</h2>  
             <input type="text" name="usuario" placeholder="Usuário" />
             <input type="password" name="senha" placeholder="Senha" />
             <button type="submit">LOGAR</button>
-            <a href="registro.php" class="register-btn">Registre-se</a>
+            <a href="registro.html" class="register-btn">Registre-se</a>
         </div>
     </form>
 
