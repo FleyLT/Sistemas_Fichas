@@ -30,7 +30,8 @@ $papel = 'jogador';  // O papel pode ser definido como "jogador" por padrão
 $stmt->bind_param("ssss", $nome, $email, $senha_hash, $papel);
 
 if ($stmt->execute()) {
-    echo "Registro realizado com sucesso!";
+    echo "<script>alert('Conta criada com sucesso!);</script>";
+    header('Location: index.php');
 } else {
     echo "Erro: " . $conn->error;
 }

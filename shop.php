@@ -4,7 +4,7 @@ require 'conexao.php';
 
 $usuario_id = $_SESSION['usuario_id'] ?? null;
 if (!$usuario_id) {
-    header("Location: login.php");
+    header("Location: index.php");
     exit;
 }
 ?>
